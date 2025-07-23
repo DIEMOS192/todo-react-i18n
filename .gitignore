@@ -86,7 +86,7 @@ temp/
 .tailwindcss-cache
 
 # Lock files (if using yarn, uncomment the npm line)
-# package-lock.json
+package-lock.json
 yarn.lock
 
 # Debug
