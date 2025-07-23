@@ -4,12 +4,15 @@ import { TodoProvider } from "./contexts/TodoContext";
 import Home from "./pages/Home";
 
 function App() {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   useEffect(() => {
     document.documentElement.lang = i18n.language;
     document.documentElement.dir = i18n.language === "ar" ? "rtl" : "ltr";
-  }, [i18n.language]);
+
+    // Update page title based on current language
+    document.title = t("pageTitle");
+  }, [i18n.language, t]);
 
   return (
     <TodoProvider>

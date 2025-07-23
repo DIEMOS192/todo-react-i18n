@@ -43,3 +43,5 @@ Arabic (RTL)
 🎨 TailwindCSS or custom CSS – for styling & RTL support.
 
 💾 localStorage – to save tasks locally in the browser.
+
+vercel deployment: https://todo-react-i18n.vercel.app/
