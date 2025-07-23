@@ -1,5 +1,12 @@
 {
   "welcome": "Welcome to the Todo App",
   "description": "Manage your tasks efficiently with a modern UI, persistent storage, and support for both English and Arabic languages.",
-  "cta": "Get Started"
+  "cta": "Get Started",
+  "delete": "Delete",
+  "todoList": "Todo List",
+  "noTodos": "No todos yet. Add one to get started!",
+  "addTodo": "Add",
+  "addTodoPlaceholder": "What needs to be done?",
+  "num_tasks": " tasks",
+  "one_task": "1 task"
 }

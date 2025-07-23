@@ -52,6 +52,9 @@ dist-ssr
 build
 *.local
 
+# Public assets (Vite generates these)
+public/
+
 # Vite
 .vite
 
