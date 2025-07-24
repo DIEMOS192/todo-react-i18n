@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-4">
       {/* Language Switcher */}
-      <div className="absolute top-4 ltr:right-4 rtl:left-4">
+      <div className="absolute top-4 right-4">
         <LanguageSwitcher />
       </div>
 
