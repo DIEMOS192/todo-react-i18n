@@ -3,7 +3,6 @@ import { useTodoContext } from "../hooks";
 import type { Todo } from "../types";
 import { useTranslation } from "react-i18next";
 
-
 interface TodoItemProps {
   todo: Todo;
 }
@@ -16,10 +15,15 @@ export default function TodoItem({ todo }: TodoItemProps) {
 
   const handleSubmit = () => {
     const trimmed = editText.trim();
-    if (trimmed) {
+    if (trimmed && trimmed !== todo.text) {
       updateTodo(todo.id, trimmed);
     }
     setIsEditing(false);
+  };
+
+  const handleCancel = () => {
+    setIsEditing(false);
+    setEditText(todo.text);
   };
 
   return (
@@ -40,10 +44,7 @@ export default function TodoItem({ todo }: TodoItemProps) {
             onBlur={handleSubmit}
             onKeyDown={(e) => {
               if (e.key === "Enter") handleSubmit();
-              if (e.key === "Escape") {
-                setIsEditing(false);
-                setEditText(todo.text);
-              }
+              if (e.key === "Escape") handleCancel();
             }}
             className="flex-1 border p-1 rounded"
           />
