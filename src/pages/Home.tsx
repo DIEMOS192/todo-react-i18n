@@ -47,15 +47,6 @@ export default function Home() {
 
           <TodoInput />
           <TodoList />
-
-          <div className="text-center">
-            <button
-              onClick={() => setShowTodos(false)}
-              className="px-6 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors duration-200 shadow-sm"
-            >
-              ← {t("welcome")}
-            </button>
-          </div>
         </div>
       )}
     </main>
