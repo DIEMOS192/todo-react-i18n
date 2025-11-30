@@ -9,5 +9,12 @@
   "addTodoPlaceholder": "ما الذي يجب إنجازه؟",
   "num_tasks": "من المهام",
   "one_task": "مهمة واحدة",
-  "pageTitle": "تطبيق المهام - منظم المهام متعدد اللغات"
+  "pageTitle": "تطبيق المهام - منظم المهام متعدد اللغات",
+  "all": "الكل",
+  "active": "نشط",
+  "completed": "مكتمل",
+  "clearCompleted": "مسح المكتملة",
+  "itemsLeft": "متبقي {{count}} مهام",
+  "darkMode": "الوضع الليلي",
+  "lightMode": "الوضع النهاري"
 }

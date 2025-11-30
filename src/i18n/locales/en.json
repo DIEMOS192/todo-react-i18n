@@ -9,5 +9,12 @@
   "addTodoPlaceholder": "What needs to be done?",
   "num_tasks": " tasks",
   "one_task": "1 task",
-  "pageTitle": "Todo App - Multi-Language Task Manager"
+  "pageTitle": "Todo App - Multi-Language Task Manager",
+  "all": "All",
+  "active": "Active",
+  "completed": "Completed",
+  "clearCompleted": "Clear Completed",
+  "itemsLeft": "{{count}} items left",
+  "darkMode": "Dark Mode",
+  "lightMode": "Light Mode"
 }

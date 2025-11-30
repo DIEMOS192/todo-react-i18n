@@ -11,7 +11,7 @@ export default function LanguageSwitcher() {
   return (
     <button
       onClick={toggleLanguage}
-      className="p-2 bg-blue-500 text-white rounded"
+      className="px-3 py-2 rounded-lg font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
     >
       {i18n.language === "en" ? "عربي" : "English"}
     </button>

@@ -16,20 +16,22 @@ export default function TodoInput() {
   };
 
   return (
-    <form action={handleSubmit} className="w-full">
-      <div className="flex gap-2">
-        <input
-          type="text"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-          placeholder={t("addTodoPlaceholder")}
-          className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-          autoFocus
-        />
+    <form action={handleSubmit} className="w-full relative">
+      <div className="flex gap-3">
+        <div className="relative flex-1">
+          <input
+            type="text"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+            placeholder={t("addTodoPlaceholder")}
+            className="w-full px-5 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 transition-all"
+            autoFocus
+          />
+        </div>
         <button
           type="submit"
           disabled={!inputValue.trim()}
-          className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
+          className="px-6 py-3 bg-blue-600 text-white font-medium rounded-xl shadow-sm hover:bg-blue-700 hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none transition-all duration-200 active:scale-95"
         >
           {t("addTodo")}
         </button>
